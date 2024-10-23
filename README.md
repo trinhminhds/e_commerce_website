@@ -1,70 +1,81 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Full Stack E-Commerce Website
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+This project is a full stack e-commerce website built using the MERN stack (MongoDB, Express, React, Node.js). The website provides users with an interactive shopping experience, featuring various product categories, a user-friendly interface, and an admin panel for managing the inventory and product listings.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Responsive Design**: The website adapts seamlessly to different screen sizes, including mobile, tablet, and desktop views.
+- **Category Navigation**: Users can navigate between different categories like Men's, Women's, and Kids' collections.
+- **Product Listing**: Each product is displayed with detailed information, including size options and prices.
+- **Search and Filter**: Users can search for products and apply filters for a more refined shopping experience.
+- **Admin Panel**: The admin can manage products by adding, updating, or deleting items in the inventory, along with the ability to upload images.
+- **User Authentication**: Sign-up and login functionality is provided, with authentication tokens stored securely.
+- **Add to Cart**: Users can add products to their cart and proceed to checkout.
+- **Responsive Layout**: The entire website is optimized for multiple devices with smooth transitions and display adjustments based on the screen size.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tech Stack
 
-### `npm test`
+- **Frontend**: React.js
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB (using MongoDB Atlas)
+- **Authentication**: JSON Web Token (JWT) for user authentication
+- **File Uploads**: Multer for handling image uploads
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+1. **Clone the Repository**:
+    ```bash
+    git clone https://github.com/your-repo-url.git
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **Backend Setup**:
+    - Navigate to the backend folder:
+        ```bash
+        cd backend
+        ```
+    - Install dependencies:
+        ```bash
+        npm install
+        ```
+    - Create a `.env` file for environment variables:
+        ```
+        MONGO_URI=your-mongodb-uri
+        JWT_SECRET=your-jwt-secret
+        PORT=4000
+        ```
+    - Run the server:
+        ```bash
+        node index.js
+        ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. **Frontend Setup**:
+    - Navigate to the frontend folder:
+        ```bash
+        cd frontend
+        ```
+    - Install dependencies:
+        ```bash
+        npm install
+        ```
+    - Run the React app:
+        ```bash
+        npm start
+        ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Usage
 
-### `npm run eject`
+- **Admin Panel**: To access the admin panel, login with the admin credentials and navigate to the admin page where products can be managed.
+- **Product Display**: Users can browse the products, select different categories, and view detailed product information on individual product pages.
+- **Checkout**: After adding products to the cart, users can proceed to checkout and review their order before confirming.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Features in Progress
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Payment Integration**: Work is in progress to integrate Stripe for payment processing.
+- **Order History**: Users will be able to view their order history and track their purchases.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Contribution
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to fork this project and contribute by submitting pull requests. All kinds of contributions, such as bug fixes, feature enhancements, and new ideas, are welcome!
